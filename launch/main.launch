@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="rc_rabbit" pkg="rc_rabbit" type="rc_rabbit" output="screen"/>
+
+    <include file="$(find rc_hw)/launch/rc_hw.launch">
+        
+    </include>
+
+    <include file="$(find rc_config)/launch/load_controllers.launch">
+        
+    </include>
+
+    <include file="$(find rc_ibus)/launch/rc_ibus.launch">
+        
+    </include>
+
+    <!-- <include file="$(find rc_navigation)/launch/rc_navigation.launch">
+        
+    </include> -->
+    
+
+</launch>
